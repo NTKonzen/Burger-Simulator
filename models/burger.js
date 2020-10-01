@@ -2,7 +2,7 @@ const orm = require('../config/orm');
 
 const Burger = {
     all(cb) {
-        orm.getAll('burgers', 'burgersDB', cb);
+        orm.getAll('burgers', cb);
     }
 };
 
