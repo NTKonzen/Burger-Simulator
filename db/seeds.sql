@@ -5,4 +5,6 @@ INSERT INTO burgers
 VALUES
     ('Turkey Burger', false),
     ('Chicken Burger', false),
-    ('Bacon Ranch Burger', false);
+    ('Bacon Ranch Burger', false),
+    ('Protein-Style Burger', true),
+    ('Quarter Pounder', true);
