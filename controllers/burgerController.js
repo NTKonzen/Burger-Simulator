@@ -18,7 +18,7 @@ router.post('/api/burgers', (req, res) => {
 });
 
 router.put('/api/burgers/:id', (req, res) => {
-    const id = req.params.id;
+    const id = parseInt(req.params.id);
     Burger.devour(id, (result) => {
         res.sendStatus(200);
     })
@@ -28,7 +28,7 @@ router.delete('/api/burgers/:id', (req, res) => {
     const id = parseInt(req.params.id);
     Burger.delete(id, (result) => {
         res.sendStatus(200);
-    })
+    });
 })
 
 module.exports = router;
