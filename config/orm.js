@@ -25,4 +25,12 @@ module.exports = {
             cb(result);
         })
     },
+    update(table, newVal, id, cb) {
+        id = parseInt(id)
+        connection.query(`UPDATE ?? SET ${newVal} WHERE id=?`, [table, id], (err, result) => {
+            if (err) throw err;
+
+            cb(result);
+        })
+    }
 };

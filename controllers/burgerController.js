@@ -15,7 +15,14 @@ router.post('/api/burgers', (req, res) => {
     Burger.create([req.body.name, false], (result) => {
         res.json({ id: result.insertId });
     })
-})
+});
+
+router.put('/api/burgers/:id', (req, res) => {
+    const id = req.params.id;
+    Burger.devour(id, (result) => {
+        res.sendStatus(200);
+    })
+});
 
 module.exports = router;
 

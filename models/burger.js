@@ -6,6 +6,9 @@ const Burger = {
     },
     create(vals, cb) {
         orm.create('burgers', ['name', 'devoured'], vals, cb);
+    },
+    devour(id, cb) {
+        orm.update('burgers', 'devoured=true', id, cb);
     }
 };
 

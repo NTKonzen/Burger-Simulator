@@ -14,6 +14,15 @@ $(document).ready(function () {
 
             location.reload();
         })
-    })
+    });
+
+    $('.devourBtn').click(event => {
+        const id = $(event.target).data('burger-id');
+        $.ajax('/api/burgers/' + id, {
+            type: 'PUT'
+        }).then(response => {
+            location.reload();
+        })
+    });
 
 });
