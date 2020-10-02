@@ -32,5 +32,12 @@ module.exports = {
 
             cb(result);
         })
+    },
+    delete(table, id, cb) {
+        connection.query(`DELETE FROM ?? WHERE id=?`, [table, id], (err, result) => {
+            if (err) throw err;
+
+            cb(result);
+        })
     }
 };

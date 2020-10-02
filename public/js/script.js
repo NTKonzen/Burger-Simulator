@@ -25,4 +25,13 @@ $(document).ready(function () {
         })
     });
 
+    $('.deleteBtn').click(event => {
+        const id = $(event.target).data('burger-id');
+        $.ajax('/api/burgers/' + id, {
+            type: 'DELETE'
+        }).then(response => {
+            location.reload();
+        });
+    })
+
 });

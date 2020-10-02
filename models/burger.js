@@ -9,6 +9,9 @@ const Burger = {
     },
     devour(id, cb) {
         orm.update('burgers', 'devoured=true', id, cb);
+    },
+    delete(id, cb) {
+        orm.delete('burgers', id, cb);
     }
 };
 
