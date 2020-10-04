@@ -7,7 +7,7 @@
 * [Questions](#questions)
 * [License](#license)
 
-[![Heroku](./public/images/burger.png)](https://burgersim.herokuapp.com/)
+[![Heroku](./public/images/screenshot.png)](https://burgersim.herokuapp.com/)
 [Click here to view the simulation!](https://burgersim.herokuapp.com/)
 
 ## Description ##
