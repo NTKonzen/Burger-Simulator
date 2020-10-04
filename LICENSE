@@ -1,29 +1,3 @@
-# Burger Simulator
-[![GitHub](https://img.shields.io/github/license/NTKonzen/README-Generator)](#license)
-
-### Table of Contents
-* [Description](#description)
-* [Contributors](#contributors) 
-* [Questions](#questions)
-* [License](#license)
-
-[![Heroku](./public/images/burger.png)](https://burgersim.herokuapp.com/)
-[Click here to view the simulation!](https://burgersim.herokuapp.com/)
-
-## Description ##
-
-This is a simple web application that allows the user to add burgers, eat burgers, and devour virtual burgers. I built this to practice my skills in node.js and mysql and well as practice using the MVC layout. This code can be used by anyone looking to learn how to structure an mvc app or learn how to integrate mysql and node.js. 
-
-### Contributors
-
-* [Nicholas Konzen](https://github.com/NTKonzen)
-
-### Questions
-If you have any questions feel free to contact me on [GitHub](https://github.com/NTKonzen) or email me at nicholaskonzen@gmail.com.
-
----
-#### License
-
 MIT License
 
 Copyright (c) 2020 Nicholas Konzen
