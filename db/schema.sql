@@ -4,11 +4,12 @@ CREATE SCHEMA
 `burgersDB` ;
 USE `burgersDB`;
 
-CREATE TABLE `burgersDB`.`burgers`
+CREATE TABLE burgers
 (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR
-(50) NOT NULL,
-  `devoured` TINYINT NOT NULL DEFAULT 0,
+  id INT NOT NULL
+  AUTO_INCREMENT,
+  name VARCHAR
+  (50) NOT NULL,
+  devoured TINYINT NOT NULL DEFAULT 0,
   PRIMARY KEY
-(`id`));
+  (id));
